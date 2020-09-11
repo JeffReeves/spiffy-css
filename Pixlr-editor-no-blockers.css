@@ -1,0 +1,12 @@
+@-moz-document url("https://pixlr.com/e/") {
+/* removes elements that block user interaction */
+    div#sneaky,
+    div#video-content {
+        display: none; 
+    }
+    
+    iframe,
+    div.celtra-placement-sticky {
+        display: none !important;   
+    }
+}

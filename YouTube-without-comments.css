@@ -1,15 +1,5 @@
 @-moz-document url-prefix("https://www.youtube.com/watch") {
-/* blocks the display of all YouTube comments */
-    
-    /* hides comments but leaves main container element intact, 
-       so lazy loading doesn't error */
-    yt-formatted-string#content-text,
-    ytd-comment-action-buttons-renderer#action-buttons,
-    ytd-button-renderer#more-replies,
-    div#main.ytd-comment-renderer,
-    yt-img-shadow.ytd-comment-renderer img#img.yt-img-shadow {
-        display: none;
-    }
+/* blocks the display of all YouTube comments and chat boxes */
 
     /* leaving this commented out because otherwise it causes 
     infinite comment rendering/loading attempts */
@@ -18,4 +8,20 @@
         display: none;   
     } 
     */
+
+    /* hides comments but leaves main container element intact, 
+        so lazy loading doesn't error */
+    yt-formatted-string#content-text,
+    ytd-comment-action-buttons-renderer#action-buttons,
+    ytd-button-renderer#more-replies,
+    div#main.ytd-comment-renderer,
+    yt-img-shadow.ytd-comment-renderer img#img.yt-img-shadow {
+        display: none;
+    }
+
+
+    /* hides chat on live videos */
+    ytd-live-chat-frame#chat {
+        display: none;   
+    }
 }

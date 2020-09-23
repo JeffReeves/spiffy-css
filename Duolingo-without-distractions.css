@@ -1,23 +1,28 @@
 @-moz-document url-prefix("https://www.duolingo.com/learn") {
 /* disable sidebar elements that are distracting for perfectionists */
-    
+
     /* league display */
     div._1_p4S._3Gj5_ {
         display: none;
     }
-    
+
     /* disable adblocker */
     div._1UOwI._3bfsh {
         display: none;   
     }
-    
+
     /* next achievement */
     div.Yth9H._3ZuGY {
         display: none;   
     }
-    
+
     /* follow Duolingo */
     div._3Gj5_ {
-        /*display: none;   */
+        /* display: none; */
+    }
+
+    /* invite friends banner */
+    div._3u05T {
+        display: none;
     }
 }

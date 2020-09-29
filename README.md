@@ -1,6 +1,6 @@
-# Stylishly
+# Spiffy
 
-My collection of cascading style sheets (CSS) for use with browser plugins like Stylish
+My collection of cascading style sheets (CSS) for use with browser plugins like Stylus
 
 ## How to Use
 
@@ -8,7 +8,7 @@ My collection of cascading style sheets (CSS) for use with browser plugins like 
 
 2. Copy the contents of the desired .css file.
 
-3. Click on the Stylish plugin, click on the kebob menu (&vellip;), and select "Create New Style".
+3. Click on the Stylus plugin, click on the kebob menu (&vellip;), and select "Create New Style".
 
 4. Select the "Import" option within Stylish, paste the CSS code, and click "Overwrite Style".
 

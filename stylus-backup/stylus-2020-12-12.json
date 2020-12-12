@@ -1,0 +1,65 @@
+[
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1607761388981,
+		"name": "YouTube-without-comments",
+		"sections": [
+			{
+				"code": "/* blocks the display of all YouTube comments and chat boxes */\n\n    /* leaving this commented out because otherwise it causes \n    infinite comment rendering/loading attempts */\n    /*\n    ytd-comment-thread-renderer.ytd-item-section-renderer {\n        display: none;   \n    } \n    */\n\n    /* hides comments but leaves main container element intact, \n        so lazy loading doesn't error */\n    yt-formatted-string#content-text,\n    ytd-comment-action-buttons-renderer#action-buttons,\n    ytd-button-renderer#more-replies,\n    div#main.ytd-comment-renderer,\n    yt-img-shadow.ytd-comment-renderer img#img.yt-img-shadow {\n        display: none;\n    }\n\n\n    /* hides chat on live videos */\n    ytd-live-chat-frame#chat {\n        display: none;   \n    }",
+				"urlPrefixes": [
+					"https://www.youtube.com/watch"
+				]
+			}
+		],
+		"updateDate": 1607761388981,
+		"_id": "14da89ee-bef9-4cd0-bd9e-b5b0c7ed4e6f",
+		"_rev": 1607761388981,
+		"id": 1
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1607761417956,
+		"name": "Duolingo-without-distractions",
+		"sections": [
+			{
+				"code": "/* disable sidebar elements that are distracting for perfectionists */\n\n    /* league display */\n    div._1_p4S._3Gj5_ {\n        display: none;\n    }\n\n    /* disable adblocker */\n    div._1UOwI._3bfsh {\n        display: none;   \n    }\n\n    /* next achievement */\n    div.Yth9H._3ZuGY {\n        display: none;   \n    }\n\n    /* follow Duolingo */\n    div._3Gj5_ {\n        /* display: none; */\n    }\n\n    /* invite friends banner */\n    div._3u05T {\n        display: none;\n    }",
+				"urlPrefixes": [
+					"https://www.duolingo.com/learn"
+				]
+			}
+		],
+		"updateDate": 1607761417956,
+		"_id": "ee486717-f1ad-4b75-b3bc-195272543fd9",
+		"_rev": 1607761417956,
+		"id": 2
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1607761439708,
+		"name": "Pixlr-editor-no-blockers",
+		"sections": [
+			{
+				"code": "/* removes elements that block user interaction */\n    div#sneaky,\n    div#video-content {\n        display: none; \n    }\n    \n    iframe,\n    div.celtra-placement-sticky {\n        display: none !important;   \n    }",
+				"urls": [
+					"https://pixlr.com/e/"
+				]
+			}
+		],
+		"updateDate": 1607761439708,
+		"_id": "b146c7d7-2a40-4bcb-a5f4-b1a9ac28d3b5",
+		"_rev": 1607761439708,
+		"id": 3
+	}
+]

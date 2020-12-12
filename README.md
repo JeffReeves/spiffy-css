@@ -15,3 +15,8 @@ My collection of cascading style sheets (CSS) for use with browser plugins like 
 5. Give the style a name and verify the "Applies to" field matches the desired URL/URL Prefix.
 
 6. Click "Save" and enjoy!
+
+
+### Alternative
+
+Follow steps 1-3 above, then use the "Backup -> Import" option to select the JSON file within the `stylus-backup` directory of this repository.

@@ -1,6 +1,6 @@
-# Spiffy
+# Spiffy CSS
 
-My collection of cascading style sheets (CSS) for use with browser plugins like Stylus
+My collection of cascading style sheets (CSS) for use with browser plugins like Stylus to modify existing websites and web apps
 
 ## How to Use
 

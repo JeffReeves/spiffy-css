@@ -19,6 +19,10 @@
         display: none;
     }
 
+    /* hides comment count number */
+    .count-text {
+        display: none;
+    }
 
     /* hides chat on live videos */
     ytd-live-chat-frame#chat {

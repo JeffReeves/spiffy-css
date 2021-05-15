@@ -1,0 +1,67 @@
+@-moz-document domain("read.amazon.com") {
+    /* Purpose: Sepia override for Kindle Cloud Reader's bright white "Great Value" looking theme */
+    /* Author: Jeff Reeves */
+    
+    /*==[ LIBRARY / HOME ]=====*/
+    /* the class names will probably change every new build... */
+    
+    /* header */
+    ._1vj2douZ_WF6EvFP1K3Y6s {
+        background: #e7dec7;
+    }
+    
+        /* search bar */
+        input[type='search']._1sgLtE4DxR-XXPLGyBCcOC {
+            background: #d2c7ab;
+        }
+    
+    /* second header */
+    ._2YYXPtXJqMTPJbKOi-qMsT {
+        background: linear-gradient(#c5b896 0%, #e7dec7 59%) fixed;
+    }
+    
+    /* body */
+    ._18oNBwLP1oBKNoOJzx5Qaw {
+        background: linear-gradient(#c5b896 0%, #e7dec7 59%) fixed;
+    }
+    
+    
+    /*==[ READER ]=====*/
+    /* make sure the official Sepia theme is selected too */
+    
+    /* header */
+    #kindleReader_header {
+        background: #E7DEC7AC;
+    }
+    
+    /* pop-up */
+    .ui-dialog.ui-widget.ui-widget-content.ui-corner-all {
+        background: #eee7d3;
+        border: 1px solid #c5b896;
+    }
+    
+        /* buttons */
+        #kindleReader_menu_contextMenu.dictionary_enabled #kindle_menu_border {
+            display: table;
+            width: 375px;
+            background: #c5b896;
+        }
+    
+            /* dictionary modal */
+            .dictionary .dictionaryList {
+                height: 15px;
+                margin-bottom: 15px;
+                margin-top: 5px;
+                color: grey;
+            }
+    
+                /* dictionary modal - dropdown selection */
+                #kindle_menu_border {
+                    background-color: #eee7d3;
+                }
+    
+    /* footer */
+    #kindleReader_footer {
+        background: #eee7d3;
+    }
+}

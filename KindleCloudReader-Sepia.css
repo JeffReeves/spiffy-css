@@ -9,16 +9,16 @@
     ._1vj2douZ_WF6EvFP1K3Y6s {
         background: #e7dec7;
     }
-    
-        /* search bar */
-        input[type='search']._1sgLtE4DxR-XXPLGyBCcOC {
-            background: #d2c7ab;
-        }
 
         /* settings drop-down */
         ._2nOrxHco-zf7we5k_RHAlE {
             border-top: 1px solid #c5b896;
             background-color: #e7dec7;
+        }
+
+        /* search bar */
+        input[type='search']._1sgLtE4DxR-XXPLGyBCcOC {
+            background: #d2c7ab;
         }
     
     /* second header */

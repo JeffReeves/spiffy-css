@@ -25,6 +25,20 @@
         background: linear-gradient(#c5b896 0%, #e7dec7 59%) fixed;
     }
     
+        /* book title */
+        ._3m2av6M0gH1lDPgXyqQxbh ._2czmS0An9GDlVR9xgpCNOC {
+            color: #090e13;
+            font-family: Georgia, serif;
+            font-size: 14px !important;
+        }
+
+        /* book author */
+        ._2TnOF-UnoMZ_MvQemNeruy {
+            color: #6B6B6B;
+            /* font-family: AmazonEmber-Regular, "Amazon Ember", "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "Yu Mincho", sans-serif-light, sans-serif; */
+            font-family: Georgia, serif;
+            font-size: 15px;
+        }
     
     /*==[ READER ]=====*/
     /* make sure the official Sepia theme is selected too */

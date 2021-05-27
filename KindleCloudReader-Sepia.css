@@ -25,6 +25,20 @@
     ._2YYXPtXJqMTPJbKOi-qMsT {
         background: linear-gradient(#c5b896 0%, #e7dec7 59%) fixed;
     }
+
+        /* sort by drop-down */
+        /* highlighted (active) */
+        .C4SsST5Mz6zbpOm2VPfMk, 
+        ._3pJ7mPGgMt3fUhqQlOBd6M, 
+        ._3FyOvhfOPRXtCcYku5VipH {
+            background-color: #d2c7ab;
+        }
+
+        /* horizontal (hr) seperator */
+        ._2xukndnhqUQM-xKabW89WY {
+            color: #e7dec7;
+            background-color: #e7dec7;
+        }
     
     /* body */
     ._18oNBwLP1oBKNoOJzx5Qaw {

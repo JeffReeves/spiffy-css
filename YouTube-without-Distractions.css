@@ -1,0 +1,146 @@
+@-moz-document url-prefix("https://www.youtube.com/watch") {
+/* Applies to videos */
+    
+    /* blocks the display of all YouTube comments and chat boxes */
+    
+    /* leaving this commented out because otherwise it causes 
+    infinite comment rendering/loading attempts */
+    /*
+    ytd-comment-thread-renderer.ytd-item-section-renderer {
+        display: none;   
+    } 
+    */
+    
+    /* hides comments but leaves main container element intact, 
+        so lazy loading doesn't error */
+    yt-formatted-string#content-text,
+    ytd-comment-action-buttons-renderer#action-buttons,
+    ytd-button-renderer#more-replies,
+    div#main.ytd-comment-renderer,
+    yt-img-shadow.ytd-comment-renderer img#img.yt-img-shadow {
+        display: none;
+    }
+    
+    /* hides chat on live videos */
+    ytd-live-chat-frame#chat {
+        display: none;   
+    }
+    
+    /* hide next button and preview */
+    a.ytp-next-button[aria-label="Next (SHIFT+n)"] {
+        display: none;
+    }
+    
+    /* Block related videos */
+    div#related,
+    div#player-ads {
+        display: none;
+    }
+    
+    /* hide hashtags */
+    a.yt-simple-endpoint.style-scope.yt-formatted-string[href^="/hashtag"] {
+        display: none !important;
+    }
+    
+    /* hide view count */
+    span.view-count {
+        display: none;
+    }
+    
+    /* hide comment count, and sort */
+    h2#count,
+    span#sort-menu {
+        display: none !important;
+    }
+    
+    /* hide author and comment field */
+    yt-img-shadow#author-thumbnail.ytd-commentbox,
+    div#action-menu,
+    div#main.ytd-commentbox {
+        display: none;
+    }
+    
+    /* hide sentiment bar (like/dislike ratio) */
+    ytd-sentiment-bar-renderer#sentiment {
+        display: none;
+    }
+    
+    /* hide thumbs up/down and share buttons */
+    div#top-level-buttons-computed > ytd-toggle-button-renderer,
+    div#top-level-buttons-computed > ytd-button-renderer:nth-last-child(n+3)
+    {
+        display: none;
+    }
+    
+    /* hide sponsor and applaud button and text */
+    div#sponsor-button,
+    button[aria-label="Applaud"],
+    yt-interaction#interaction,
+    yt-formatted-string#text.ytd-button-renderer {
+        display: none !important;
+    }
+    
+    /* hide all tooltips */
+    tp-yt-paper-tooltip.ytd-button-renderer {
+        display: none;
+    }
+    
+    /* hide merchandise */
+    div#merch-shelf {
+        display: none;
+    }
+    
+    /* hide up next */
+    div.ytp-autonav-endscreen-countdown-container, 
+    div.ytp-autonav-endscreen-upnext-container,
+    div.ytp-endscreen-content {
+        display: none !important;
+    }
+    
+    /* hide next video on player */
+    div.ytp-tooltip.ytp-text-detail.ytp-preview,
+    div.ytp-tooltip-text-wrapper {
+        display: none;
+    }
+    
+    /* hide notification button */
+    div#notification-preference-button,
+    ytd-subscription-notification-toggle-button-renderer {
+        display: none;
+    }
+}
+    
+@-moz-document url("https://www.youtube.com/") {
+/* Applies to main page */
+    
+    /* hide all recommended videos */
+    div#primary { 
+        display: none;
+    }
+    
+    /* hide explore and originals */
+    div#items > ytd-guide-entry-renderer:nth-child(2),
+    div#items > ytd-guide-entry-renderer:nth-child(4) {
+        display: none;
+    }
+    
+    /* hide subscriptions list */
+    div#sections > ytd-guide-section-renderer:nth-child(2) {
+        display: none;
+    }
+}
+    
+@-moz-document url-prefix("https://www.youtube.com/playlist?list="), url-prefix("https://www.youtube.com/feed/") {
+/* Applies to Playlists, Library, History, Watch Later, etc. */
+    
+    /* hide explore and originals */
+    div#items > ytd-guide-entry-renderer:nth-child(2),
+    div#items > ytd-guide-entry-renderer:nth-child(4) {
+        display: none;
+    }
+    
+    /* hide subscriptions list */
+    div#sections > ytd-guide-section-renderer:nth-child(2) {
+        display: none;
+    }
+}

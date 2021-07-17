@@ -28,7 +28,7 @@
     
     /* hide next button and preview */
     a.ytp-next-button[aria-label="Next (SHIFT+n)"] {
-        background: red;
+        display: none;
     }
     
     /* Block related videos */

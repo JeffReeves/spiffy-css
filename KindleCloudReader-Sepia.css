@@ -1,101 +1,108 @@
 @-moz-document domain("read.amazon.com") {
     /* Purpose: Sepia override for Kindle Cloud Reader's bright white "Great Value" looking theme */
-    /* Author: Jeff Reeves */
-    
-    /*==[ LIBRARY / HOME ]=====*/
-    /* the class names will probably change every new build... */
-    
-    /* header */
-    ._1vj2douZ_WF6EvFP1K3Y6s {
-        background: #e7dec7;
-    }
-
-        /* settings drop-down */
-        ._2nOrxHco-zf7we5k_RHAlE {
-            border-top: 1px solid #c5b896;
-            background-color: #e7dec7;
-        }
-
-        /* search bar */
-        input[type='search']._1sgLtE4DxR-XXPLGyBCcOC {
-            background: #d2c7ab;
+        /* Author: Jeff Reeves */
+        
+        /*==[ LIBRARY / HOME ]=====*/
+        /* the class names will probably change every new build... */
+        
+        /* header */
+        ._1vj2douZ_WF6EvFP1K3Y6s {
+            background: #e7dec7;
         }
     
-    /* second header */
-    ._2YYXPtXJqMTPJbKOi-qMsT {
-        background: linear-gradient(#c5b896 0%, #e7dec7 59%) fixed;
-    }
-
-        /* sort by drop-down */
-        /* highlighted (active) */
-        .C4SsST5Mz6zbpOm2VPfMk, 
-        ._3pJ7mPGgMt3fUhqQlOBd6M, 
-        ._3FyOvhfOPRXtCcYku5VipH {
-            background-color: #d2c7ab;
-        }
-
-        /* horizontal (hr) seperator */
-        ._2xukndnhqUQM-xKabW89WY {
-            color: #e7dec7;
-            background-color: #e7dec7;
-        }
-    
-    /* body */
-    ._18oNBwLP1oBKNoOJzx5Qaw {
-        background: linear-gradient(#c5b896 0%, #e7dec7 59%) fixed;
-    }
-    
-        /* book title */
-        ._3m2av6M0gH1lDPgXyqQxbh ._2czmS0An9GDlVR9xgpCNOC {
-            color: #090e13;
-            font-family: Georgia, serif;
-            font-size: 14px !important;
-        }
-
-        /* book author */
-        ._2TnOF-UnoMZ_MvQemNeruy {
-            color: #6B6B6B;
-            /* font-family: AmazonEmber-Regular, "Amazon Ember", "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "Yu Mincho", sans-serif-light, sans-serif; */
-            font-family: Georgia, serif;
-            font-size: 15px;
-        }
-    
-    /*==[ READER ]=====*/
-    /* make sure the official Sepia theme is selected too */
-    
-    /* header */
-    #kindleReader_header {
-        background: #E7DEC7AC;
-    }
-    
-    /* pop-up */
-    .ui-dialog.ui-widget.ui-widget-content.ui-corner-all {
-        background: #eee7d3;
-        border: 1px solid #c5b896;
-    }
-    
-        /* buttons */
-        #kindleReader_menu_contextMenu.dictionary_enabled #kindle_menu_border {
-            display: table;
-            width: 375px;
-            background: #c5b896;
-        }
-    
-            /* dictionary modal */
-            .dictionary .dictionaryList {
-                height: 15px;
-                margin-bottom: 15px;
-                margin-top: 5px;
-                color: grey;
+            /* settings drop-down */
+            ._2nOrxHco-zf7we5k_RHAlE {
+                border-top: 1px solid #c5b896;
+                background-color: #e7dec7;
             }
     
-                /* dictionary modal - dropdown selection */
-                #kindle_menu_border {
-                    background-color: #eee7d3;
-                }
+            /* search bar */
+            input[type='search']._1sgLtE4DxR-XXPLGyBCcOC {
+                background: #d2c7ab;
+            }
+        
+        /* second header */
+        ._2YYXPtXJqMTPJbKOi-qMsT,
+        #header-subcomponent {
+            background: linear-gradient(#c5b896 0%, #e7dec7 59%) fixed !important;
+        }
     
-    /* footer */
-    #kindleReader_footer {
-        background: #eee7d3;
+            /* sort by drop-down */
+            /* highlighted (active) */
+            .C4SsST5Mz6zbpOm2VPfMk, 
+            ._3pJ7mPGgMt3fUhqQlOBd6M, 
+            ._3FyOvhfOPRXtCcYku5VipH {
+                background-color: #d2c7ab;
+            }
+    
+            /* horizontal (hr) seperator */
+            ._2xukndnhqUQM-xKabW89WY {
+                color: #e7dec7;
+                background-color: #e7dec7;
+            }
+    
+        /* sidebar */
+        #sidebar {
+            background: #e7dec7;
+        }
+        
+        /* body */
+        ._18oNBwLP1oBKNoOJzx5Qaw,
+        ._2HY8S0l2E0RSpTo47MAvQP {
+            background: linear-gradient(#c5b896 0%, #e7dec7 59%) fixed !important;
+        }
+    
+            /* book title */
+            ._3m2av6M0gH1lDPgXyqQxbh ._2czmS0An9GDlVR9xgpCNOC {
+                color: #090e13;
+                font-family: Georgia, serif;
+                font-size: 14px !important;
+            }
+    
+            /* book author */
+            ._2TnOF-UnoMZ_MvQemNeruy {
+                color: #6B6B6B;
+                /* font-family: AmazonEmber-Regular, "Amazon Ember", "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "Yu Mincho", sans-serif-light, sans-serif; */
+                font-family: Georgia, serif;
+                font-size: 15px;
+            }
+        
+        /*==[ READER ]=====*/
+        /* make sure the official Sepia theme is selected too */
+        
+        /* header */
+        #kindleReader_header {
+            background: #E7DEC7AC;
+        }
+        
+        /* pop-up */
+        .ui-dialog.ui-widget.ui-widget-content.ui-corner-all {
+            background: #eee7d3;
+            border: 1px solid #c5b896;
+        }
+        
+            /* buttons */
+            #kindleReader_menu_contextMenu.dictionary_enabled #kindle_menu_border {
+                display: table;
+                width: 375px;
+                background: #c5b896;
+            }
+        
+                /* dictionary modal */
+                .dictionary .dictionaryList {
+                    height: 15px;
+                    margin-bottom: 15px;
+                    margin-top: 5px;
+                    color: grey;
+                }
+        
+                    /* dictionary modal - dropdown selection */
+                    #kindle_menu_border {
+                        background-color: #eee7d3;
+                    }
+        
+        /* footer */
+        #kindleReader_footer {
+            background: #eee7d3;
+        }
     }
-}

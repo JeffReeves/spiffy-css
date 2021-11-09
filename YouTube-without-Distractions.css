@@ -66,9 +66,17 @@
     }
     
     /* hide thumbs up/down and share buttons */
-    div#top-level-buttons-computed > ytd-toggle-button-renderer,
-    div#top-level-buttons-computed > ytd-button-renderer:nth-last-child(n+3)
-    {
+    /*div#top-level-buttons-computed > ytd-toggle-button-renderer {
+        display: none;
+    }*/
+
+    /* hide count next to thumbs up/down buttons */
+    div#top-level-buttons-computed > ytd-toggle-button-renderer > a > yt-formatted-string#text {
+        display: none;
+    }
+
+    /* hide share buttons */
+    div#top-level-buttons-computed > ytd-button-renderer:nth-last-child(n+3){
         display: none;
     }
     

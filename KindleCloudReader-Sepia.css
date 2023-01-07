@@ -46,6 +46,7 @@
         background: #e7dec7;
     }
     
+    
     /* body */
     ._18oNBwLP1oBKNoOJzx5Qaw,
     ._2HY8S0l2E0RSpTo47MAvQP {
@@ -66,8 +67,7 @@
             font-family: Georgia, serif;
             font-size: 15px;
         }
-
-
+    
     /*==[ READER ]=====*/
     /* make sure the official Sepia theme is selected too */
     
@@ -104,13 +104,13 @@
     
     /* body */
     #kindleReader_center {
-        background-color:#e7dec7;
+        background-color:#e7dec7 !important;
     }
 
     /* page turn buttons */
     #kindleReader_pageTurnAreaLeft,
     #kindleReader_pageTurnAreaRight {
-        background-color:#e7dec7;
+        background-color:#e7dec7  !important;
     }
 
     /* footer */
